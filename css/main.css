@@ -36,7 +36,11 @@ nav .ssv-logo {
   height: 55px;
 }
 
-.menu-wrap {
+nav .menu-wrap {
+  visibility: hidden;
+}
+
+nav .menu-desktop {
   visibility: hidden;
 }
 
@@ -124,27 +128,27 @@ section h2 {
 }
 
 /* Section: Specialties */
-#especialidades .specialty {
+#especialidades .container .specialty {
   padding: 25px 0;
   display: flex;
   align-items: center;
 }
 
-#especialidades .specialty .icon {
+#especialidades .container .specialty .icon {
   background: #ABD25F;
   width: 70px;
   height: 70px;
   border-radius: 50%;
   margin-right: 15px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
-#especialidades .specialty .icon img {
+#especialidades .container .specialty .icon img {
   padding: 10px;
 }
 
-#especialidades .specialty h3 {
+#especialidades .container .specialty h3 {
   padding-bottom: 0.5rem;
 }
 

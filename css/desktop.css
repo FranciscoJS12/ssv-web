@@ -1,0 +1,49 @@
+/* Navbar */
+nav .menu-desktop {
+  visibility: visible;
+  width: 100%;
+}
+
+nav .menu-desktop ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav .menu-desktop ul li {
+  padding: 1.5rem;
+  font-weight: 500;
+  height: 100%;
+}
+
+/* Header */
+header h1 {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+}
+
+/* Section: Specialties */
+#especialidades .container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#especialidades .container .specialty {
+  justify-content: center;
+  text-align: center;
+  max-width: 300px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin: 2rem;
+}
+
+#especialidades .container .specialty .icon {
+  margin: 0;
+}
+
+#especialidades .container .specialty h3 {
+  padding: 1rem;
+}
