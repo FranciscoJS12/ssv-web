@@ -188,31 +188,32 @@ section h2 {
 
 /* Section: Experience/Where */
 #nuestra_experiencia > p {
-  text-align: center;
-}
-#nuestra_experiencia .container {
-  padding: var(--padding-y);
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: justify;
+  padding-bottom: 30px;
+  line-height: 1.5rem;
 }
 
-#nuestra_experiencia .container .slide {
-  display: flex;
-  flex-direction: column;
+#nuestra_experiencia figure {
+  background: rgba(196,196,196,0.55);
+  border-radius: 15px;
+  margin-bottom: 2rem;
 }
 
-#nuestra_experiencia .container .slide img {
+#nuestra_experiencia figure img {
+  max-width: 100%;
+  height: auto;
   display: block;
-  width: 100%;
-  object-fit: cover;
+  margin: 0 auto;
 }
-
-#nuestra_experiencia .container .slide figcaption {
-  width: 90vw;
-  background: blue;
+#nuestra_experiencia figure h3 {
+  text-align: center;
+  padding: 0.5rem;
+  padding-top: 1.5rem;
+}
+#nuestra_experiencia figure p {
+  text-align: justify;
+  padding: 0.5rem;
+  line-height: 1.5rem;
 }
 
 /* Setion: Contact */
@@ -220,6 +221,12 @@ section h2 {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+#contacto .subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-bottom: 1.5rem;
 }
 
 #contacto .container {
@@ -232,7 +239,7 @@ section h2 {
 #contacto .container .card {
   display: flex;
   margin: 15px;
-  flex-basis: 356px;
+  /* flex-basis: 356px; */
   align-items: center;
   padding: 10px;
   background: rgba(196,196,196,0.55);
@@ -241,6 +248,10 @@ section h2 {
 
 #contacto .container .card p {
   padding-left: 10px;
+}
+
+#contacto .container .card:hover {
+  background: #ABD25F;
 }
 
 /* Footer */
