@@ -1,7 +1,10 @@
+* {font-size: 20px}
+
 /* Navbar */
 nav .menu-desktop {
   visibility: visible;
   width: 100%;
+  height: 100%;
 }
 
 nav .menu-desktop ul {
@@ -11,9 +14,14 @@ nav .menu-desktop ul {
 }
 
 nav .menu-desktop ul li {
-  padding: 1.5rem;
+  padding: 1.3rem;
   font-weight: 500;
   height: 100%;
+}
+
+nav .menu-desktop ul li:hover {
+  color: var(--secondary-color);
+  background: var(--overlay-color);
 }
 
 /* Header */
@@ -37,7 +45,9 @@ header h1 {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-start;
-  margin: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #especialidades .container .specialty .icon {
@@ -46,4 +56,38 @@ header h1 {
 
 #especialidades .container .specialty h3 {
   padding: 1rem;
+}
+
+/* Section: Who */
+#quienes_somos p.desc {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#quienes_somos .specialists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#quienes_somos .specialists h3 {
+  flex-basis: 100%;
+}
+
+#quienes_somos .specialists .specialist {
+  margin: 0 25px;
+}
+
+/* Section: Experience/Where */
+#nuestra_experiencia > p {
+  text-align: center;
+}
+
+#nuestra_experiencia figure {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 900px;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
