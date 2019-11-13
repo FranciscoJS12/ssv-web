@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/glide.theme.min.css">
   <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:700|Roboto:400,500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/animations.css">
   <link rel="stylesheet" media="screen and (max-width: 769px)" href="./css/ham-menu.css">
   <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 769px)">
 </head>
@@ -48,10 +49,10 @@
   <header id="inicio">
     <div class="background">
       <div class="container">
-        <h1>Administración de Campos</h1>
-        <p>Manejo integral y sus derivados de explotaciones agropecuarias.</p>
+        <h1 class="fade-in">Administración de Campos</h1>
+        <p class="fade-in">Manejo integral y sus derivados de explotaciones agropecuarias.</p>
       </div>
-      <a href="#especialidades" class="arrow-down"><img src="./img/keyboard_arrow_down.svg" alt="Scroll down"></a>
+      <a href="#especialidades" class="arrow-down"><img src="./img/keyboard_arrow_down.svg" alt="Scroll down" class="gentle-bounce"></a>
     </div>
   </header>
 
@@ -120,7 +121,7 @@
                     <img src="./img/placeholder1.JPG" alt="">
                     <figcaption>
                       <h3>Venado Tuerto</h3>
-                      <p>Campo de altísimo potencial donde hacemos agricultura permanente en rotación. Los rindes promedios de los últimos años superan en maíz los 110qq, soja de 1era 50qq, soja de 2da 37qq y los cultivos de invierno los 55qq.</p>
+                      <p>Campo de altísimo potencial donde hacemos agricultura permanente en rotación. Los rindes promedio de los últimos años superan en maíz los 110qq, soja de 1era 50qq, soja de 2da 37qq y los cultivos de invierno los 55qq.</p>
                     </figcaption>
                   </figure>
               </li>
@@ -218,6 +219,8 @@
   </footer>
 
     <script src="./js/glide.min.js"></script>
+
+    <script src="./js/main.js"></script>
 
     <script>
       const config = {
