@@ -1,0 +1,269 @@
+// Import Variables and Utilities
+@import 'config';
+@import 'animations';
+
+// Navbar
+nav {
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  background-color: $color-dark;
+  color: #fff;
+  z-index: 2;
+
+  .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .nav-menu {
+    display: flex;
+
+    .nav-link {
+      line-height: 1;
+      padding: 20px 15px;
+      transition: background-color 0.5s ease;
+
+      &:hover {
+        background-color: $color-secondary;
+      }
+    }
+  }
+}
+
+// Hero Section
+#start {
+  height: 100vh;
+  width: 100%;
+
+  .bg-main {
+    background: url(../img/bg-main.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .container {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    padding-top: 30vh;
+    padding-bottom: 1rem;
+    font-family: 'Frank Ruhl Libre', serif;
+  }
+  .main-subtitle {
+    font-size: 2.2rem;
+  }
+  .scroll-indicator {
+    width: 40px;
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin: auto
+  }
+}
+
+// Section: What We Do
+#whatWeDo {
+  min-height: 50vh;
+
+  .what {
+    &-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-evenly;
+    }
+
+    &-tile {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      height: 400px;
+      text-align: center;
+      align-items: center;
+      padding: 2rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+
+    &-icon {
+      height: 90px;
+      width: 90px;
+      padding: 10px;
+      border-radius: 50%;
+      border: solid 2px #000;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 50px;
+      }
+    }
+
+    &-title {
+      padding: 1rem;
+      font-size: 1.3rem;
+    }
+
+    &-text {
+      line-height: 1.75;
+    }
+  }
+}
+
+// Section: Who We Are
+#whoWeAre {
+  .who {
+    &-text {
+      text-align: justify;
+      padding-bottom: 1.5rem;
+      line-height: 1.5rem;
+    }
+
+    &-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    &-portrait {
+      text-align: center;
+      line-height: 1.5;
+      border-bottom: solid 1px $color-medium;
+      
+      img {
+        width: 250px;
+        border-radius: 50%;
+        margin: 1.5rem;
+      }
+
+      .portrait-text {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}
+
+// Section: Where We Work
+#where {
+  .where {
+    &-subtitle {
+      text-align: center;
+      padding-bottom: 2rem;
+      line-height: 1.5;
+    }
+
+    &-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-evenly;
+    }
+
+    &-tile {
+      width: 400px;
+      height: 350px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      text-align: center;
+      transition: transform 0.1s ease;
+
+      &:hover {transform: translateY(5px);}
+    }
+
+    &-img {
+      width: 100%;
+      height: 300px;
+    }
+    &-img.where-01 {
+      background: url(../img/01-venado_tuerto.jpg) no-repeat center center/cover;
+    }
+    &-img.where-02 {
+      background: url(../img/02-rojas.jpg) no-repeat center center/cover;
+    }
+    &-img.where-03 {
+      background: url(../img/03-buchardo-cordoba.jpg) no-repeat center center/cover;
+    }
+    &-img.where-04 {
+      background: url(../img/04-beruti-trenque-lauquen.jpeg) no-repeat center center/cover;
+    }
+
+    &-title {
+      width: 100%;
+      height: 50px;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+// Section: Contact
+#contactInfo {
+  .contact-text {
+    text-align: left;
+    padding-bottom: 1.5rem;
+    line-height: 1.5;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .social {
+    &-icons {
+      padding: 2rem;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-evenly;
+
+      a {
+        height: 75px;
+        width: 75px;
+        border-radius: 12px;
+        filter: invert(9%) sepia(10%) saturate(5%) hue-rotate(321deg) brightness(98%) contrast(89%);
+        transition: filter 0.5s ease;
+        transition: transform 0.1s ease;
+
+        &:hover {
+          filter: invert(45%) sepia(99%) saturate(1471%) hue-rotate(89deg) brightness(93%) contrast(83%);
+          transform: translateY(3px);
+        }
+      }
+    }
+  }
+}
+
+// Footer
+footer {
+  border-top: 1px solid $color-dark;
+  text-align: center;
+  padding: 2rem;
+
+  img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+// Import media queries.
+@import 'media';

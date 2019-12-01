@@ -1,0 +1,33 @@
+@media(max-width: 550px) {
+  // Navbar
+  nav {
+    height: 100px;    
+
+    .container {
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .nav-logo {
+      height: 30px;
+    }
+
+    .nav-menu {
+      .nav-link {
+        padding: 0.5rem 0.5rem;
+      }
+    }
+  }
+
+  // Hero Section
+  #start {
+    h1 {
+      font-size: 2rem;
+      line-height: 1.5;
+    }
+    .main-subtitle {
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+  }
+}

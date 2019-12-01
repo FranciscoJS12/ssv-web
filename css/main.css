@@ -1,18 +1,14 @@
 * {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  scroll-behavior: smooth;
 }
 
-:root {
-  --padding-y: 0 10px;
-  --primary-color: rgb(8, 94, 0);
-  --secondary-color: rgba(171, 210, 95, 0.95);
-  --overlay-color: rgba(24, 39, 51, 0.85);
-  --bg-color: rgba(243,243,243,0.55);
-  --menu-speed: 0.75s;
+ul {
+  list-style: none;
 }
 
 a {
@@ -20,87 +16,58 @@ a {
   color: inherit;
 }
 
-/* Navbar */
-nav {
-  height: 75px;
+img {
   width: 100%;
-  position: fixed;
-  z-index: 1;
-  background: var(--bg-color);
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  padding: var(--padding-y);
+  height: auto;
 }
 
-nav .ssv-logo {
-  height: 55px;
+body {
+  background-color: #fcfcfc;
 }
 
-nav .menu-wrap {
-  visibility: hidden;
+.container {
+  max-width: 1100px;
+  padding: 0 20px;
+  margin: auto;
 }
 
-nav .menu-desktop {
-  visibility: hidden;
+section .container {
+  padding: 75px 20px;
+  background-color: #fff;
 }
 
-/* Header */
-header {
-  height: 100vh;
-  width: 100%;
-  background: #EBEBEB url(../img/bg-header.jpg) no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-header .container {
-  padding: var(--padding-y);
-}
-
-header h1 {
-  font-family: 'Frank Ruhl Libre', serif;
-  text-decoration: none;
-  text-transform: capitalize;
+section h2 {
   font-size: 2.5rem;
-  font-weight: 700;
-  padding-bottom: 1rem;
+  text-align: center;
+  padding-bottom: 3rem;
 }
 
-header p {
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-
-header .arrow-down {
-  position: relative;
-  top: 20vh;
-}
-header .arrow-down img {
-  height: 3rem;
-}
-
-/* Image Separator */
-.img-separator.sep01 {
+.divisor-01 {
   height: 25vh;
+  margin: 0 auto;
+  max-width: 1100px;
   background: url(../img/img-sep01.JPG);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.img-separator.sep02 {
+
+.divisor-02 {
   height: 25vh;
+  margin: 0 auto;
+  max-width: 1100px;
   background: url(../img/img-sep02.JPG);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.img-separator.sep03 {
+
+.divisor-03 {
   height: 25vh;
+  margin: 0 auto;
+  max-width: 1100px;
   background: url(../img/img-sep03.JPG);
   background-attachment: fixed;
   background-position: center;
@@ -108,173 +75,397 @@ header .arrow-down img {
   background-size: cover;
 }
 
-/* Sections */
-section h2 {
-  font-family: 'Frank Ruhl Libre', serif;
-  text-decoration: none;
-  text-transform: capitalize;
-  text-align: center;
-  font-size: 1.75rem;
+.gentle-bounce {
+  animation: gentleBounce ease 3s;
+  animation-delay: 2s;
+  -webkit-animation: gentleBounce ease 3s;
+  -webkit-animation-delay: 2s;
+  -moz-animation: gentleBounce ease 3s;
+  -moz-animation-delay: 2s;
+  -o-animation: gentleBounce ease 3s;
+  -o-animation-delay: 2s;
+  -ms-animation: gentleBounce ease 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
-/* Sections */
-section {
-  background: #EBEBEB;
-  padding: 30px 15px;
+@keyframes gentleBounce {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes gentleBounce {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+nav {
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  background-color: #242424;
+  color: #fff;
+  z-index: 2;
+}
+
+nav .container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav-logo {
+  height: 50px;
+  width: 50px;
+}
+
+nav .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav-menu .nav-link {
+  line-height: 1;
+  padding: 20px 15px;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+nav .nav-menu .nav-link:hover {
+  background-color: #0184ef;
+}
+
+#start {
+  height: 100vh;
   width: 100%;
 }
 
-section h2 {
-  padding: 25px 0;
+#start .bg-main {
+  background: url(../img/bg-main.jpg) no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
 }
 
-/* Section: Specialties */
-#especialidades .container .specialty {
-  padding: 25px 0;
-  display: flex;
-  align-items: center;
-}
-
-#especialidades .container .specialty .icon {
-  background: var(--secondary-color);
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  margin-right: 15px;
-  display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
-}
-#especialidades .container .specialty .icon img {
-  padding: 10px;
-}
-
-#especialidades .container .specialty h3 {
-  padding-bottom: 0.5rem;
-}
-
-/* Section: Who */
-#quienes_somos p.desc {
-  text-align: justify;
-  padding: 1rem 0;
-  line-height: 1.5rem;
-}
-#quienes_somos > p:nth-of-type(2n) {
-  padding-bottom: 2rem;
-}
-
-#quienes_somos .specialists h3 {
+#start .container {
+  position: relative;
+  height: 100%;
   text-align: center;
-  text-transform: capitalize;
+  color: #fff;
+  z-index: 1;
+}
+
+#start h1 {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  padding-top: 30vh;
   padding-bottom: 1rem;
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+#start .main-subtitle {
+  font-size: 2.2rem;
+}
+
+#start .scroll-indicator {
+  width: 40px;
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#whatWeDo {
+  min-height: 50vh;
+}
+
+#whatWeDo .what-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#whatWeDo .what-tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 250px;
+  height: 400px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#whatWeDo .what-icon {
+  height: 90px;
+  width: 90px;
+  padding: 10px;
+  border-radius: 50%;
+  border: solid 2px #000;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#whatWeDo .what-icon img {
+  height: 50px;
+}
+
+#whatWeDo .what-title {
+  padding: 1rem;
   font-size: 1.3rem;
 }
 
-#quienes_somos .specialists .specialist {
-  text-align: center;
-  padding-bottom: 25px;
+#whatWeDo .what-text {
+  line-height: 1.75;
 }
 
-#quienes_somos .specialists .specialist img {
-  height: 250px;
+#whoWeAre .who-text {
+  text-align: justify;
+  padding-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+
+#whoWeAre .who-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#whoWeAre .who-portrait {
+  text-align: center;
+  line-height: 1.5;
+  border-bottom: solid 1px #c5c5c5;
+}
+
+#whoWeAre .who-portrait img {
+  width: 250px;
   border-radius: 50%;
   margin: 1.5rem;
 }
 
-#quienes_somos .specialists .specialist .name {
-  font-size: 1.1rem;
-}
-#quienes_somos .specialists .specialist .expertise {
-  border-bottom: solid 1px #c4c4c4;
-}
-#quienes_somos .specialists .specialist p {
-  padding-bottom: 0.5rem;
+#whoWeAre .who-portrait .portrait-text {
+  padding-bottom: 1rem;
 }
 
-/* Section: Experience/Where */
-#nuestra_experiencia {
-  max-height: 100vh;
-}
-
-#nuestra_experiencia > p {
-  text-align: justify;
-  padding-bottom: 30px;
-  line-height: 1.5rem;
-}
-
-#nuestra_experiencia figure {
-  background: var(--bg-color);
-  /* border-radius: 15px; */
-  margin-bottom: 2rem;
-}
-
-#nuestra_experiencia figure img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-#nuestra_experiencia figure h3 {
-  font-size: 1.2rem;
+#where .where-subtitle {
   text-align: center;
-  padding: 0.5rem;
-  padding-top: 1.5rem;
-}
-#nuestra_experiencia figure p {
-  text-align: justify;
-  padding: 0.5rem;
-  padding-bottom: 1.5rem;
-  line-height: 1.5rem;
+  padding-bottom: 2rem;
+  line-height: 1.5;
 }
 
-/* Setion: Contact */
-#contacto {
-  width: 100%;
+#where .where-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-#contacto .subtitle {
+#where .where-tile {
+  width: 400px;
+  height: 350px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   text-align: center;
-  font-size: 1.2rem;
-  padding-bottom: 1.5rem;
+  -webkit-transition: -webkit-transform 0.1s ease;
+  transition: -webkit-transform 0.1s ease;
+  transition: transform 0.1s ease;
+  transition: transform 0.1s ease, -webkit-transform 0.1s ease;
 }
 
-#contacto .container {
+#where .where-tile:hover {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+#where .where-img {
   width: 100%;
+  height: 300px;
+}
+
+#where .where-img.where-01 {
+  background: url(../img/01-venado_tuerto.jpg) no-repeat center center/cover;
+}
+
+#where .where-img.where-02 {
+  background: url(../img/02-rojas.jpg) no-repeat center center/cover;
+}
+
+#where .where-img.where-03 {
+  background: url(../img/03-buchardo-cordoba.jpg) no-repeat center center/cover;
+}
+
+#where .where-img.where-04 {
+  background: url(../img/04-beruti-trenque-lauquen.jpeg) no-repeat center center/cover;
+}
+
+#where .where-title {
+  width: 100%;
+  height: 50px;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#contacto .container .card {
+#contactInfo .contact-text {
+  text-align: left;
+  padding-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+#contactInfo .contact-text span {
+  font-weight: bold;
+}
+
+#contactInfo .social-icons {
+  padding: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin: 15px;
-  align-items: center;
-  padding: 10px;
-  background: rgba(196,196,196,0.55);
-  /* border-radius: 15px; */
-  transition: background 0.4s ease;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-#contacto .container .card p {
-  padding-left: 10px;
+#contactInfo .social-icons a {
+  height: 75px;
+  width: 75px;
+  border-radius: 12px;
+  -webkit-filter: invert(9%) sepia(10%) saturate(5%) hue-rotate(321deg) brightness(98%) contrast(89%);
+          filter: invert(9%) sepia(10%) saturate(5%) hue-rotate(321deg) brightness(98%) contrast(89%);
+  -webkit-transition: -webkit-filter 0.5s ease;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-transition: -webkit-transform 0.1s ease;
+  transition: -webkit-transform 0.1s ease;
+  transition: transform 0.1s ease;
+  transition: transform 0.1s ease, -webkit-transform 0.1s ease;
 }
 
-#contacto .container .card:hover {
-  background: var(--overlay-color);
-  color: var(--secondary-color);
+#contactInfo .social-icons a:hover {
+  -webkit-filter: invert(45%) sepia(99%) saturate(1471%) hue-rotate(89deg) brightness(93%) contrast(83%);
+          filter: invert(45%) sepia(99%) saturate(1471%) hue-rotate(89deg) brightness(93%) contrast(83%);
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
 }
 
-/* Footer */
 footer {
-  height: 15vh;
-  display: flex;
-  align-items: center;
-  background: #727272;
+  border-top: 1px solid #242424;
+  text-align: center;
+  padding: 2rem;
 }
 
 footer img {
-  height: 60px;
-  margin: auto;
+  height: 100px;
+  width: 100px;
 }
+
+@media (max-width: 550px) {
+  nav {
+    height: 100px;
+  }
+  nav .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav .nav-logo {
+    height: 30px;
+  }
+  nav .nav-menu .nav-link {
+    padding: 0.5rem 0.5rem;
+  }
+  #start h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  #start .main-subtitle {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
+/*# sourceMappingURL=main.css.map */

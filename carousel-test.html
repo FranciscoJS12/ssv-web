@@ -41,60 +41,70 @@
     <p>En la actualidad administramos campos en diferentes zonas:</p>
 
     <div class="container">
-      <div class="glide">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-  
-            <li class="glide__slide">
-              <div class="slide">
-                <figure>
-                  <img src="./img/placeholder1.JPG" alt="">
-                  <figcaption>
-                    <h3>Venado Tuerto</h3>
-                    <p>Campo de altísimo potencial donde hacemos agricultura permanente en rotación. Los rindes promedios de los últimos años superan en maíz los 110qq, soja de 1era 50qq, soja de 2da 37qq y los cultivos de invierno los 55qq.</p>
-                  </figcaption>
-                </figure>
-            </li>
-  
-            <li class="glide__slide">
-              <div class="slide">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+    
+              <li class="glide__slide">
+                <div class="slide">
                   <figure>
-                    <img src="./img/placeholder2.JPG" alt="">
+                    <img src="./img/01-venado_tuerto.jpg" alt="">
                     <figcaption>
-                      <h3>Rojas</h3>
-                      <p>Campo dividido en tercios, maíz, soja y siembra de fina. Resultados similares a Venado Tuerto, pero en suelos más pesados.</p>
+                      <h3>Venado Tuerto</h3>
+                      <p>Campo de altísimo potencial donde hacemos agricultura permanente en rotación. Los rindes promedio de los últimos años superan en maíz los 110qq, en soja de primera los 50qq, soja de segunda 37qq y en cultivos de invierno los 55qq.</p>
                     </figcaption>
                   </figure>
-              </div>
-            </li>
-  
-            <li class="glide__slide">
-              <div class="slide">
-                  <figure>
-                    <img src="./img/placeholder3.JPG" alt="">
-                    <figcaption>
-                      <h3>Buchardo</h3>
-                      <p>Campo de altísimo potencial para cultivos de verano. También se alterna la producción e maní. La fina es un poco más errática y de un potencial  medio.</p>
-                    </figcaption>
-                  </figure>
-              </div>
-            </li>
-  
-          </ul>
-        </div>
-        <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa fa-chevron-left"></i></button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa fa-chevron-right"></i></button>
-        </div>
-        <div class="glide__bullets" data-glide-el="controls[nav]">
-          <button class="glide__bullet" data-glide-dir="=0"></button>
-          <button class="glide__bullet" data-glide-dir="=1"></button>
-          <button class="glide__bullet" data-glide-dir="=2"></button>
+              </li>
+    
+              <li class="glide__slide">
+                <div class="slide">
+                    <figure>
+                      <img src="./img/02-rojas.jpg" alt="">
+                      <figcaption>
+                        <h3>Rojas</h3>
+                        <p>Campo dividido en tercios, maíz, soja y siembra de fina. Resultados similares a Venado Tuerto, pero en suelos más pesados.</p>
+                      </figcaption>
+                    </figure>
+                </div>
+              </li>
+    
+              <li class="glide__slide">
+                <div class="slide">
+                    <figure>
+                      <img src="./img/03-buchardo-cordoba.jpg" alt="">
+                      <figcaption>
+                        <h3>Buchardo, Córdoba</h3>
+                        <p>Campo de altísimo potencial para cultivos de verano. También se alterna la producción de maní. La fina es un poco más errática y de un potencial  medio.</p>
+                      </figcaption>
+                    </figure>
+                </div>
+              </li>
+
+              <li class="glide__slide">
+                <div class="slide">
+                    <figure>
+                      <img src="./img/04-beruti-trenque-lauquen.jpeg" alt="">
+                      <figcaption>
+                        <h3>Beruti, Trenque Lauquen</h3>
+                        <p>Aptitud mixta, con manejo de zona núcleo en agricultura. Años de altísimos rindes para todos los cultivos, otros defensivos por manejo en rotación y cuidado de rastrojos. En ganadería una base de cría, que se potencia en ciclo completo dependiendo de la oferta forrajera y condiciones del mercado.</p>
+                      </figcaption>
+                    </figure>
+                </div>
+              </li>
+    
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa fa-chevron-left"></i></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa fa-chevron-right"></i></button>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+          </div>
         </div>
       </div>
-    </div>
-
-
   </section>
 
   <div class="img-separator sep03"></div>
@@ -104,6 +114,8 @@
       const config = {
         type: 'carousel',
         perView: 1,
+        autoplay: 4000,
+        hoverpause: true,
       }
       new Glide('.glide', config).mount()
     </script>
