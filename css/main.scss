@@ -99,7 +99,7 @@ nav {
       text-align: center;
       align-items: center;
       padding: 2rem;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      box-shadow: $shadow;
     }
 
     &-icon {
@@ -180,7 +180,7 @@ nav {
     &-tile {
       width: 400px;
       height: 350px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      box-shadow: $shadow;
       text-align: center;
       transition: transform 0.1s ease;
 
@@ -249,6 +249,79 @@ nav {
           transform: translateY(3px);
         }
       }
+    }
+  }
+}
+
+// Experiencie Page
+#experience {
+  h2 {
+    padding-top: 2rem;
+  }
+
+  .glide__slide {
+    height: 50vh;
+
+    .slide {
+      display: flex;
+      flex-direction: column-reverse;
+      height: 100%;
+      width: 100%;
+
+      h3 {
+        width: 100%;
+        padding: 1rem 0;
+        text-align: center;
+        background-color: rgba(0,0,0,0.5);
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: normal;
+      }
+
+      &-01 {
+        background: url(../img/01-venado_tuerto.jpg) no-repeat center bottom/cover;
+      }
+      &-02 {
+        background: url(../img/02-rojas.jpg) no-repeat center bottom/cover;
+      }
+      &-03 {
+        background: url(../img/03-buchardo-cordoba.jpg) no-repeat center bottom/cover;
+      }
+      &-04 {
+        background: url(../img/04-beruti-trenque-lauquen.jpeg) no-repeat center bottom/cover;
+      }
+    }
+  }
+
+  .experience {
+    &-gallery {padding-top: 3rem;}
+
+    &-tile {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      min-height: 350px;
+      line-height: 2;
+      box-shadow: $shadow;
+      margin-top: 75px;
+    }
+    &-desc {
+      padding: 1rem;
+    }
+    &-title {text-align: center;}
+    &-txt {text-align: justify;}
+
+    &-01 {
+      background: url(../img/01-venado_tuerto.jpg) no-repeat center bottom/cover;
+    }
+    &-02 {
+      background: url(../img/02-rojas.jpg) no-repeat center bottom/cover;
+    }
+    &-03 {
+      background: url(../img/03-buchardo-cordoba.jpg) no-repeat center bottom/cover;
+    }
+    &-04 {
+      background: url(../img/04-beruti-trenque-lauquen.jpeg) no-repeat center bottom/cover;
     }
   }
 }

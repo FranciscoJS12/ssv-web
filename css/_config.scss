@@ -4,6 +4,7 @@ $color-primary: #18aa24;
 $color-secondary: #0184ef;
 $color-dark: #242424;
 $color-medium: #c5c5c5;
+$shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 // Set Text Color
 @function set-text-color($color) {
