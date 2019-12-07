@@ -35,11 +35,19 @@
   #experience {
     .experience {
       &-tile {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+
+        &:nth-child(even) {
+          flex-direction: column;
+        }
       }
 
       &-img {
         min-height: 250px;
+        width: 100%;
+      }
+      &-desc {
+        width: 100%;
       }
     }
   }

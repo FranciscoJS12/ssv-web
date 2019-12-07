@@ -297,16 +297,21 @@ nav {
     &-gallery {padding-top: 3rem;}
 
     &-tile {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
       min-height: 350px;
       line-height: 2;
       box-shadow: $shadow;
       margin-top: 75px;
+      display: flex;
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+    &-img {
+      width: 50%;
     }
     &-desc {
       padding: 1rem;
+      width: 50%;
     }
     &-title {text-align: center;}
     &-txt {text-align: justify;}
