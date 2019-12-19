@@ -176,8 +176,9 @@ nav {
     &-gallery {
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem;
       justify-content: space-evenly;
+      gap: 2rem;
+      margin-bottom: 2rem;
     }
 
     &-tile {
@@ -185,7 +186,7 @@ nav {
       height: 350px;
       box-shadow: $shadow;
       text-align: center;
-      transition: transform 0.1s ease;
+      transition: transform 0.2s ease;
       border-radius: 5px;
 
       &:hover {transform: translateY(5px);}
