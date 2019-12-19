@@ -62,7 +62,7 @@ section {
   &-01 {
     height: 25vh;
     margin: 0 auto;
-    max-width: $website-width;
+    max-width: 100%;
     background: url(../img/img-sep01.JPG);
     background-attachment: fixed;
     background-position: center;
@@ -72,7 +72,7 @@ section {
   &-02 {
     height: 25vh;
     margin: 0 auto;
-    max-width: $website-width;
+    max-width: 100%;
     background: url(../img/img-sep02.JPG);
     background-attachment: fixed;
     background-position: center;
@@ -82,7 +82,7 @@ section {
   &-03 {
     height: 25vh;
     margin: 0 auto;
-    max-width: $website-width;
+    max-width: 100%;
     background: url(../img/img-sep03.JPG);
     background-attachment: fixed;
     background-position: center;

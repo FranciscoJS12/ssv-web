@@ -45,7 +45,7 @@ section h2 {
 .divisor-01 {
   height: 25vh;
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 100%;
   background: url(../img/img-sep01.JPG);
   background-attachment: fixed;
   background-position: center;
@@ -56,7 +56,7 @@ section h2 {
 .divisor-02 {
   height: 25vh;
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 100%;
   background: url(../img/img-sep02.JPG);
   background-attachment: fixed;
   background-position: center;
@@ -67,7 +67,7 @@ section h2 {
 .divisor-03 {
   height: 25vh;
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 100%;
   background: url(../img/img-sep03.JPG);
   background-attachment: fixed;
   background-position: center;
@@ -189,12 +189,21 @@ nav .nav-menu .nav-link:hover {
   text-align: center;
   color: #fff;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #start h1 {
   font-size: 4.5rem;
   text-transform: uppercase;
-  padding-top: 30vh;
   padding-bottom: 1rem;
   font-family: 'Frank Ruhl Libre', serif;
 }
@@ -246,6 +255,7 @@ nav .nav-menu .nav-link:hover {
   padding: 2rem;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
 }
 
 #whatWeDo .what-icon {
@@ -340,6 +350,7 @@ nav .nav-menu .nav-link:hover {
   transition: -webkit-transform 0.1s ease;
   transition: transform 0.1s ease;
   transition: transform 0.1s ease, -webkit-transform 0.1s ease;
+  border-radius: 5px;
 }
 
 #where .where-tile:hover {
@@ -350,6 +361,7 @@ nav .nav-menu .nav-link:hover {
 #where .where-img {
   width: 100%;
   height: 300px;
+  border-radius: 5px 5px 0 0;
 }
 
 #where .where-img.where-01 {
@@ -384,7 +396,7 @@ nav .nav-menu .nav-link:hover {
 }
 
 #contactInfo .contact-text {
-  text-align: left;
+  text-align: center;
   padding-bottom: 1.5rem;
   line-height: 1.5;
 }
@@ -395,7 +407,8 @@ nav .nav-menu .nav-link:hover {
 
 #contactInfo .social-icons {
   padding: 2rem;
-  width: 100%;
+  width: 75%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,8 +421,8 @@ nav .nav-menu .nav-link:hover {
 }
 
 #contactInfo .social-icons a {
-  height: 75px;
-  width: 75px;
+  height: 50px;
+  width: 50px;
   border-radius: 12px;
   -webkit-filter: invert(9%) sepia(10%) saturate(5%) hue-rotate(321deg) brightness(98%) contrast(89%);
           filter: invert(9%) sepia(10%) saturate(5%) hue-rotate(321deg) brightness(98%) contrast(89%);
