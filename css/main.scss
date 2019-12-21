@@ -176,9 +176,9 @@ nav {
     &-gallery {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-evenly;
+      justify-content: center;
       gap: 2rem;
-      margin-bottom: 2rem;
+      margin: 1rem;
     }
 
     &-tile {
