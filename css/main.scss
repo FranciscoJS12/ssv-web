@@ -48,6 +48,17 @@ nav {
     background: url(../img/bg-main.jpg) no-repeat center center/cover;
     height: 100%;
     width: 100%;
+
+    // Improve contrast with overlay
+    &::after {
+      content: '';
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0,0,0,0.3);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 
   .container {
