@@ -388,7 +388,7 @@ nav .nav-menu .nav-link:hover {
 }
 
 #where .where-img.where-04 {
-  background: url(../img/04-beruti-trenque-lauquen.jpeg) no-repeat center center/cover;
+  background: url(../img/04-beruti-trenque-lauquen.jpg) no-repeat center center/cover;
 }
 
 #where .where-title {
@@ -456,6 +456,14 @@ nav .nav-menu .nav-link:hover {
 
 #experience h2 {
   padding-top: 2rem;
+  font-family: 'Frank Ruhl Libre', serif;
+  text-transform: uppercase;
+}
+
+#experience .glide__arrow img {
+  height: 18px;
+  -webkit-filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(324deg) brightness(105%) contrast(101%);
+          filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(324deg) brightness(105%) contrast(101%);
 }
 
 #experience .glide__slide {
@@ -497,11 +505,11 @@ nav .nav-menu .nav-link:hover {
 }
 
 #experience .glide__slide .slide-04 {
-  background: url(../img/04-beruti-trenque-lauquen.jpeg) no-repeat center bottom/cover;
+  background: url(../img/04-beruti-trenque-lauquen.jpg) no-repeat center bottom/cover;
 }
 
 #experience .experience-gallery {
-  padding-top: 3rem;
+  padding-top: 1.5rem;
 }
 
 #experience .experience-tile {
@@ -552,7 +560,7 @@ nav .nav-menu .nav-link:hover {
 }
 
 #experience .experience-04 {
-  background: url(../img/04-beruti-trenque-lauquen.jpeg) no-repeat center bottom/cover;
+  background: url(../img/04-beruti-trenque-lauquen.jpg) no-repeat center bottom/cover;
 }
 
 footer {
